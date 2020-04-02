@@ -22,7 +22,7 @@
     } // end of for
       var myConcatenated = myTruncated.concat(myConsonants);
       //alert(myConcatenated);
-      var mySecondConcatenated = myConcatenated.concat("a,y");
+      var mySecondConcatenated = myConcatenated.concat("ay");
       return myJoined = mySecondConcatenated.join('');
       //alert(mySecondConcatenated);
    }
@@ -38,6 +38,20 @@
       } // end of if
     }) // end of forEach
     return secondArray;
-  }
-   var final = mainFunction("air ear ink user sssomething"); // try this one.
+  } // end of main function
+  //var final = mainFunction("ear yourString");
+   
   
+////////////////////// Front End Code /////////////////////////////////
+
+   $(document).ready(function() {
+    $("form#inputAndOutput").submit(function(event){
+       //alert("we are at the beginning of another block");
+       event.preventDefault();
+       var yourString = $("#yourString").val();
+       //console.log(yourString);  // for debugging
+       var final = mainFunction(yourString); // try this one.
+       //var result = stateMent(courseType, highSchool, javaScript, engineeringDegree, interest, aptitude);
+       $("#output").text(final);
+       });
+   });

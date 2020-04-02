@@ -1,0 +1,48 @@
+#choicee{
+  display: none;
+}
+#returnButton{
+  display:none;
+}
+
+#questionss{
+  display: none;
+}
+
+.btn {
+  display: block;
+}
+
+#quote {
+  display: none;
+}
+.walrus-showing {
+  display: none;
+}
+#clickable{
+  cursor: pointer;
+  color: #0088cc;
+}
+#clickable:hover {
+  text-decoration: underline;
+}
+img{
+  width: 10%;
+  height: 20%;
+  border: 6px solid darkgreen;
+}  
+.green-background {
+  background-color: green;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.red-background {
+  background-color: red;
+}
+
+#story {
+  display: none;
+}
